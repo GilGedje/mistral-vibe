@@ -273,10 +273,10 @@ class WelcomeBanner(Static):
         S = self.SPACE
 
         patterns = [
-            f"{S}[{color}]{B}[/]{S}{S}{S}[{color}]{B}[/]{S}{self._static_line1_suffix}",
-            f"{S}[{color}]{B}{B}[/]{S}[{color}]{B}{B}[/]{S}{self._static_line2_suffix}",
-            f"{S}[{color}]{B}{B}{B}{B}{B}[/]{S}{self._static_line3_suffix}",
-            f"{S}[{color}]{B}[/]{S}[{color}]{B}[/]{S}[{color}]{B}[/]{S}",
-            f"[{color}]{B}{B}{B}[/]{S}[{color}]{B}{B}{B}[/]{self._static_line5_suffix}",
+            f"[{color}]{B}[/]{S}{S}{S}[{color}]{B}[/]{self._static_line1_suffix}",
+            f"{S}[{color}]{B}[/]{S}[{color}]{B}[/]{S}{self._static_line2_suffix}",
+            f"{S}{S}[{color}]{B}[/]{S}{S}{self._static_line3_suffix}",
+            f"{S}[{color}]{B}[/]{S}[{color}]{B}[/]{S}",
+            f"[{color}]{B}[/]{S}{S}{S}[{color}]{B}[/]{self._static_line5_suffix}",
         ]
         return patterns[line_idx]
